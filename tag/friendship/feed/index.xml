@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Friendship &#8211; The Binary Philosopher</title>
+	<atom:link href="/tag/friendship/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>A Place Where I Share A Bit Too Much About Myself</description>
+	<lastBuildDate>Tue, 30 May 2023 10:20:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-150x150.png</url>
+	<title>Friendship &#8211; The Binary Philosopher</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>😇 How To Become A Good Friend</title>
+		<link>/%f0%9f%98%87-how-to-become-a-good-friend/</link>
+					<comments>/%f0%9f%98%87-how-to-become-a-good-friend/#respond</comments>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Sun, 16 Oct 2022 15:17:00 +0000</pubDate>
+				<category><![CDATA[Permanent Notes]]></category>
+		<category><![CDATA[Friendship]]></category>
+		<category><![CDATA[Personal Development]]></category>
+		<guid isPermaLink="false">/?p=596</guid>
+
+					<description><![CDATA[Who Is A Friend? It can be easy and hard to define what friendship is depending on who you&#8217;re talking to, but as I&#8217;m getting older the more I look into it, the better I feel about the friends that I have in my life. So who is a friend? A friend can be anyone, [&#8230;]]]></description>
+		
+					<wfw:commentRss>/%f0%9f%98%87-how-to-become-a-good-friend/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MOC &#8211; The Binary Philosopher</title>
+<link rel="dns-prefetch">
+<link rel="alternate" type="application/rss+xml" title="The Binary Philosopher &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="The Binary Philosopher &raquo; Comments Feed" href="/comments/feed/">
+<style>img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<style id="wp-block-image-inline-css">.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}.wp-lightbox-container .img-container{position:relative}.wp-lightbox-container button{background:none;border:none;cursor:zoom-in;height:100%;position:absolute;width:100%;z-index:100}.wp-lightbox-container button:focus-visible{outline:5px auto #212121;outline:5px auto -webkit-focus-ring-color;outline-offset:5px}.wp-lightbox-overlay{height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100vw;z-index:100000}.wp-lightbox-overlay .close-button{cursor:pointer;padding:0;position:absolute;right:12.5px;top:12.5px;z-index:5000000}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay .wp-block-image img{max-height:100%;max-width:100%;width:auto}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.fade.active{animation:turn-on-visibility .25s both;visibility:visible}.wp-lightbox-overlay.fade.active img{animation:turn-on-visibility .3s both}.wp-lightbox-overlay.fade.hideanimationenabled:not(.active){animation:turn-off-visibility .3s both}.wp-lightbox-overlay.fade.hideanimationenabled:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom img{height:var(--lightbox-image-max-height);position:absolute;transform-origin:top left;width:var(--lightbox-image-max-width)}.wp-lightbox-overlay.zoom.active{opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .wp-block-image img{animation:lightbox-zoom-in .4s forwards}@media (prefers-reduced-motion){.wp-lightbox-overlay.zoom.active .wp-block-image img{animation:turn-on-visibility .4s both}}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.hideanimationenabled:not(.active) .wp-block-image img{animation:lightbox-zoom-out .4s forwards}@media (prefers-reduced-motion){.wp-lightbox-overlay.zoom.hideanimationenabled:not(.active) .wp-block-image img{animation:turn-off-visibility .4s both}}.wp-lightbox-overlay.zoom.hideanimationenabled:not(.active) .scrim{animation:turn-off-visibility .4s forwards}html.has-lightbox-open{overflow:hidden}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{left:var(--lightbox-initial-left-position);top:var(--lightbox-initial-top-position);transform:scale(var(--lightbox-scale-width),var(--lightbox-scale-height))}to{left:var(--lightbox-target-left-position);top:var(--lightbox-target-top-position);transform:scale(1)}}@keyframes lightbox-zoom-out{0%{left:var(--lightbox-target-left-position);top:var(--lightbox-target-top-position);transform:scale(1);visibility:visible}99%{visibility:visible}to{left:var(--lightbox-initial-left-position);top:var(--lightbox-initial-top-position);transform:scale(var(--lightbox-scale-width),var(--lightbox-scale-height))}}</style>
+<style id="wp-block-image-theme-inline-css">.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}</style>
+<style id="wp-block-navigation-link-inline-css">.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word;word-break:normal}.wp-block-navigation .wp-block-navigation-item__description{display:none}</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.3.2" media="all">
+<style id="wp-block-navigation-inline-css">.wp-block-navigation{font-size: var(--wp--preset--font-size--tiny-plus);}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}</style>
+<style id="wp-block-button-inline-css">.wp-block-button__link{box-sizing:border-box;cursor:pointer;display:inline-block;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}.wp-block-button .wp-block-button__link.is-style-outline,.wp-block-button.is-style-outline>.wp-block-button__link{border:2px solid;padding:.667em 1.333em}.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color),.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color){color:currentColor}.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background),.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background){background-color:transparent;background-image:none}.wp-block-button .wp-block-button__link:where(.has-border-color){border-width:initial}.wp-block-button .wp-block-button__link:where([style*=border-top-color]){border-top-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-right-color]){border-right-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-bottom-color]){border-bottom-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-left-color]){border-left-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-style]){border-width:initial}.wp-block-button .wp-block-button__link:where([style*=border-top-style]){border-top-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-right-style]){border-right-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-bottom-style]){border-bottom-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-left-style]){border-left-width:medium}</style>
+<style id="wp-block-buttons-inline-css">.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}</style>
+<style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}</style>
+<style id="wp-block-group-theme-inline-css">:where(.wp-block-group.has-background){padding:1.25em 2.375em}</style>
+<style id="wp-block-columns-inline-css">.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+.wp-block-columns-is-layout-flow > :first-child:first-child{margin-block-start: 0;}.wp-block-columns-is-layout-flow > :last-child:last-child{margin-block-end: 0;}.wp-block-columns-is-layout-flow > *{margin-block-start: 50px;margin-block-end: 0;}.wp-block-columns-is-layout-constrained > :first-child:first-child{margin-block-start: 0;}.wp-block-columns-is-layout-constrained > :last-child:last-child{margin-block-end: 0;}.wp-block-columns-is-layout-constrained > *{margin-block-start: 50px;margin-block-end: 0;}.wp-block-columns-is-layout-flex{gap: 50px;}.wp-block-columns-is-layout-grid{gap: 50px;}</style>
+<style id="wp-block-template-part-theme-inline-css">.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="wp-block-post-title-inline-css">.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title a{display:inline-block}
+.wp-block-post-title{font-size: var(--wp--preset--font-size--large-plus);line-height: 1.3;}</style>
+<style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+p{color: var(--wp--preset--color--paragraph);}</style>
+<style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+.wp-block-heading{color: var(--wp--preset--color--body);}</style>
+<style id="lemmony-companion-icon-style-inline-css">.wp-block-lemmony-companion-icon{font-size:3.125rem;line-height:0}.wp-block-lemmony-companion-icon svg{fill:currentColor;height:1em;width:1em}.wp-block-lemmony-companion-icon.aligncenter{text-align:center}</style>
+<style id="wp-block-search-inline-css">.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;min-height:24px;min-width:24px;vertical-align:text-bottom}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search__input{-webkit-appearance:initial;appearance:none;border:1px solid #949494;flex-grow:1;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important}.wp-block-search.wp-block-search__button-only .wp-block-search__button{margin-left:0}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block-search__button-behavior-expand .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search__button-behavior-expand .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden,.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}.wp-block[data-align=right] .wp-block-search__button-behavior-expand .wp-block-search__inside-wrapper{float:right}</style>
+<style id="wp-block-search-theme-inline-css">.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}</style>
+<style id="wp-block-separator-inline-css">@charset "UTF-8";.wp-block-separator{border:1px solid;border-left:none;border-right:none}.wp-block-separator.is-style-dots{background:none!important;border:none;height:auto;line-height:1;text-align:center}.wp-block-separator.is-style-dots:before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}
+.wp-block-separator{background-color: var(--wp--preset--color--border);border-width: 0 0 1px 0;color: var(--wp--preset--color--border);}</style>
+<style id="wp-block-separator-theme-inline-css">.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}</style>
+<style id="wp-block-spacer-inline-css">.wp-block-spacer{clear:both}</style>
+<link rel="stylesheet" id="wp-dark-mode-frontend-css" href="/wp-content/plugins/wp-dark-mode/assets/css/frontend.min.css?ver=4.2.4" media="all">
+<style id="wp-dark-mode-frontend-inline-css">body{--wp-dark-mode-zoom: 150%;}body{--wp-dark-mode-scale: 1;}</style>
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #1AAD64;--wp--preset--color--secondary: #2750E1;--wp--preset--color--lemmonary: #FFE156;--wp--preset--color--body: #2C2C2C;--wp--preset--color--body-alt: #FCFCFC;--wp--preset--color--paragraph: #1C1C1C;--wp--preset--color--paragraph-alt: #757575;--wp--preset--color--meta: #5C5C5C;--wp--preset--color--border: #7C7C7C;--wp--preset--color--border-alt: #E0E0E0;--wp--preset--color--midground: #F7F7F7;--wp--preset--color--midground-alt: #ececec;--wp--preset--color--background: #FFFFFF;--wp--preset--color--background-alt: #111111;--wp--preset--color--transparent: #ffffff00;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.156), 1.25rem);--wp--preset--font-size--medium: clamp(1.5rem, 1.5rem + ((1vw - 0.2rem) * 0.469), 1.875rem);--wp--preset--font-size--large: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 0.938), 3rem);--wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 1.327), 42px);--wp--preset--font-size--tiny: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.156), 1rem);--wp--preset--font-size--tiny-plus: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.156), 1.125rem);--wp--preset--font-size--small-plus: clamp(1.35rem, 1.35rem + ((1vw - 0.2rem) * 0.188), 1.5rem);--wp--preset--font-size--medium-plus: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.625), 2.25rem);--wp--preset--font-size--large-plus: clamp(2.75rem, 2.75rem + ((1vw - 0.2rem) * 0.938), 3.5rem);--wp--preset--font-size--huge: clamp(2.85rem, 2.85rem + ((1vw - 0.2rem) * 2.063), 4.5rem);--wp--preset--font-size--huge-plus: clamp(3.15rem, 3.15rem + ((1vw - 0.2rem) * 2.313), 5rem);--wp--preset--font-size--gigantic: clamp(3.5rem, 3.5rem + ((1vw - 0.2rem) * 3.125), 6rem);--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--plus-jakarta: "Plus Jakarta Sans", sans-serif;--wp--preset--spacing--10: 0.5rem;--wp--preset--spacing--20: clamp(0.875rem, 0.875rem + ((1vw - 0.48rem) * 0.24), 1rem);--wp--preset--spacing--30: clamp(1.125rem, 1.125rem + ((1vw - 0.48rem) * 0.721), 1.5rem);--wp--preset--spacing--40: clamp(1.5rem, 1.5rem + ((1vw - 0.48rem) * 0.962), 2rem);--wp--preset--spacing--50: clamp(2.25rem, 2.25rem + ((1vw - 0.48rem) * 1.442), 3rem);--wp--preset--spacing--60: clamp(3rem, 3rem + ((1vw - 0.48rem) * 1.923), 4rem);--wp--preset--spacing--70: clamp(3.75rem, 3.75rem + ((1vw - 0.48rem) * 2.404), 5rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 774px;--wp--style--global--wide-size: 1600px; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) { padding-right: 0; padding-left: 0; }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(.has-global-padding) > .alignfull { margin-right: 0; margin-left: 0; }.has-global-padding > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: 0; padding-left: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--wp--preset--spacing--30); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: var(--wp--preset--spacing--30); }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:where(body .is-layout-flex) {gap: var(--wp--preset--spacing--30);}:where(body .is-layout-grid) {gap: var(--wp--preset--spacing--30);}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--body);font-family: var(--wp--preset--font-family--plus-jakarta);font-size: var(--wp--preset--font-size--small);line-height: 1.6;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: 7vw;--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: 7vw;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--body);text-decoration: underline;}a:where(:not(.wp-element-button)):hover{color: var(--wp--preset--color--primary?);}h1, h2, h3, h4, h5, h6{color: #2C2C2C;font-weight: 700;line-height: 1.3;}h1{font-size: var(--wp--preset--font-size--huge);line-height: 1.3;}h2{font-size: var(--wp--preset--font-size--large-plus);}h3{font-size: var(--wp--preset--font-size--);}h4{font-size: var(--wp--preset--font-size--large);}h5{font-size: var(--wp--preset--font-size--small-plus);}h6{font-size: var(--wp--preset--font-size--tiny-plus);}.wp-element-button, .wp-block-button__link{background-color: var(--wp--preset--color--background-alt);border-radius: 9999px;border-width: 0px;color: var(--wp--preset--color--body-alt);font-family: inherit;font-size: var(--wp--preset--font-size--tiny-plus);font-weight: 700;line-height: 1;padding-top: 1.334em;padding-right: 2.667em;padding-bottom: 1.334em;padding-left: 2.667em;text-decoration: none;}.wp-element-button:hover, .wp-block-button__link:hover{background-color: var(--wp--preset--color--primary);color: var(--wp--preset--color--body-alt);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-lemmonary-color{color: var(--wp--preset--color--lemmonary) !important;}.has-body-color{color: var(--wp--preset--color--body) !important;}.has-body-alt-color{color: var(--wp--preset--color--body-alt) !important;}.has-paragraph-color{color: var(--wp--preset--color--paragraph) !important;}.has-paragraph-alt-color{color: var(--wp--preset--color--paragraph-alt) !important;}.has-meta-color{color: var(--wp--preset--color--meta) !important;}.has-border-color{color: var(--wp--preset--color--border) !important;}.has-border-alt-color{color: var(--wp--preset--color--border-alt) !important;}.has-midground-color{color: var(--wp--preset--color--midground) !important;}.has-midground-alt-color{color: var(--wp--preset--color--midground-alt) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-background-alt-color{color: var(--wp--preset--color--background-alt) !important;}.has-transparent-color{color: var(--wp--preset--color--transparent) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-lemmonary-background-color{background-color: var(--wp--preset--color--lemmonary) !important;}.has-body-background-color{background-color: var(--wp--preset--color--body) !important;}.has-body-alt-background-color{background-color: var(--wp--preset--color--body-alt) !important;}.has-paragraph-background-color{background-color: var(--wp--preset--color--paragraph) !important;}.has-paragraph-alt-background-color{background-color: var(--wp--preset--color--paragraph-alt) !important;}.has-meta-background-color{background-color: var(--wp--preset--color--meta) !important;}.has-border-background-color{background-color: var(--wp--preset--color--border) !important;}.has-border-alt-background-color{background-color: var(--wp--preset--color--border-alt) !important;}.has-midground-background-color{background-color: var(--wp--preset--color--midground) !important;}.has-midground-alt-background-color{background-color: var(--wp--preset--color--midground-alt) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-background-alt-background-color{background-color: var(--wp--preset--color--background-alt) !important;}.has-transparent-background-color{background-color: var(--wp--preset--color--transparent) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-lemmonary-border-color{border-color: var(--wp--preset--color--lemmonary) !important;}.has-body-border-color{border-color: var(--wp--preset--color--body) !important;}.has-body-alt-border-color{border-color: var(--wp--preset--color--body-alt) !important;}.has-paragraph-border-color{border-color: var(--wp--preset--color--paragraph) !important;}.has-paragraph-alt-border-color{border-color: var(--wp--preset--color--paragraph-alt) !important;}.has-meta-border-color{border-color: var(--wp--preset--color--meta) !important;}.has-border-border-color{border-color: var(--wp--preset--color--border) !important;}.has-border-alt-border-color{border-color: var(--wp--preset--color--border-alt) !important;}.has-midground-border-color{border-color: var(--wp--preset--color--midground) !important;}.has-midground-alt-border-color{border-color: var(--wp--preset--color--midground-alt) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-background-alt-border-color{border-color: var(--wp--preset--color--background-alt) !important;}.has-transparent-border-color{border-color: var(--wp--preset--color--transparent) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-tiny-plus-font-size{font-size: var(--wp--preset--font-size--tiny-plus) !important;}.has-small-plus-font-size{font-size: var(--wp--preset--font-size--small-plus) !important;}.has-medium-plus-font-size{font-size: var(--wp--preset--font-size--medium-plus) !important;}.has-large-plus-font-size{font-size: var(--wp--preset--font-size--large-plus) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-huge-plus-font-size{font-size: var(--wp--preset--font-size--huge-plus) !important;}.has-gigantic-font-size{font-size: var(--wp--preset--font-size--gigantic) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-plus-jakarta-font-family{font-family: var(--wp--preset--font-family--plus-jakarta) !important;}</style>
+<style id="core-block-supports-inline-css">.wp-container-2.wp-container-2{gap:40px;justify-content:flex-start;}.wp-container-4.wp-container-4{flex-wrap:nowrap;gap:var(--wp--preset--spacing--40);}.wp-container-5.wp-container-5{justify-content:space-between;}.wp-elements-92635f8abd241d4d1a00259c69926d75 a{color:var(--wp--preset--color--meta);}.wp-container-14.wp-container-14{flex-wrap:nowrap;gap:0;justify-content:flex-start;}.wp-container-15.wp-container-15.wp-container-15.wp-container-15 > * + *{margin-block-start:var(--wp--preset--spacing--40);margin-block-end:0;}.wp-container-53.wp-container-53.wp-container-53.wp-container-53 > * + *{margin-block-start:var(--wp--preset--spacing--60);margin-block-end:0;}.wp-container-59.wp-container-59 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:320px;margin-left:auto !important;margin-right:auto !important;}.wp-container-59.wp-container-59 > .alignwide{max-width:320px;}.wp-container-59.wp-container-59 .alignfull{max-width:none;}.wp-container-59.wp-container-59 > .alignfull{margin-right:calc(var(--wp--preset--spacing--30) * -1);margin-left:calc(var(--wp--preset--spacing--30) * -1);}.wp-container-76.wp-container-76{flex-wrap:nowrap;gap:0 0;}.wp-duotone-unset-10.wp-block-image img, .wp-duotone-unset-10.wp-block-image .components-placeholder{filter:unset;}.wp-container-7.wp-container-7,.wp-container-66.wp-container-66,.wp-container-71.wp-container-71,.wp-container-73.wp-container-73{flex-wrap:nowrap;}.wp-container-15.wp-container-15 > *,.wp-container-19.wp-container-19 > *,.wp-container-26.wp-container-26 > *,.wp-container-34.wp-container-34 > *,.wp-container-41.wp-container-41 > *,.wp-container-48.wp-container-48 > *,.wp-container-53.wp-container-53 > *,.wp-container-57.wp-container-57 > *,.wp-container-59.wp-container-59 > *,.wp-container-59.wp-container-59.wp-container-59.wp-container-59 > * + *,.wp-container-61.wp-container-61 > *,.wp-container-61.wp-container-61.wp-container-61.wp-container-61 > * + *,.wp-container-67.wp-container-67 > *,.wp-container-68.wp-container-68 > *,.wp-container-69.wp-container-69 > *,.wp-container-70.wp-container-70 > *{margin-block-start:0;margin-block-end:0;}.wp-container-17.wp-container-17,.wp-container-24.wp-container-24,.wp-container-32.wp-container-32,.wp-container-39.wp-container-39,.wp-container-46.wp-container-46,.wp-container-55.wp-container-55{justify-content:center;}.wp-container-18.wp-container-18,.wp-container-25.wp-container-25,.wp-container-33.wp-container-33,.wp-container-40.wp-container-40,.wp-container-47.wp-container-47,.wp-container-56.wp-container-56{flex-wrap:nowrap;gap:var(--wp--preset--spacing--10);justify-content:flex-start;}.wp-container-19.wp-container-19.wp-container-19.wp-container-19 > * + *,.wp-container-26.wp-container-26.wp-container-26.wp-container-26 > * + *,.wp-container-34.wp-container-34.wp-container-34.wp-container-34 > * + *,.wp-container-41.wp-container-41.wp-container-41.wp-container-41 > * + *,.wp-container-48.wp-container-48.wp-container-48.wp-container-48 > * + *,.wp-container-57.wp-container-57.wp-container-57.wp-container-57 > * + *,.wp-container-67.wp-container-67.wp-container-67.wp-container-67 > * + *,.wp-container-68.wp-container-68.wp-container-68.wp-container-68 > * + *,.wp-container-69.wp-container-69.wp-container-69.wp-container-69 > * + *,.wp-container-70.wp-container-70.wp-container-70.wp-container-70 > * + *{margin-block-start:var(--wp--preset--spacing--20);margin-block-end:0;}.wp-container-20.wp-container-20,.wp-container-27.wp-container-27,.wp-container-35.wp-container-35,.wp-container-42.wp-container-42,.wp-container-49.wp-container-49,.wp-container-58.wp-container-58{flex-wrap:nowrap;gap:var(--wp--preset--spacing--30) var(--wp--preset--spacing--30);}.wp-container-30.wp-container-30,.wp-container-52.wp-container-52{flex-wrap:nowrap;gap:var(--wp--preset--spacing--50) var(--wp--preset--spacing--50);}</style>
+<link rel="stylesheet" id="wp-pagenavi-css" href="/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70" media="all">
+<style id="wp-webfonts-inline-css">@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400;font-display:block;src:url('/wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:500;font-display:block;src:url('/wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Medium.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:600;font-display:block;src:url('/wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-SemiBold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:700;font-display:block;src:url('/wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:800;font-display:block;src:url('/wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-ExtraBold.woff2') format('woff2');font-stretch:normal;}</style>
+<link rel="stylesheet" id="lemmony-editor-css" href="/wp-content/themes/lemmony/assets/css/styles.css?ver=1.4" media="all">
+<script src="/wp-includes/blocks/navigation/view.min.js?ver=886680af40b7521d60fc" id="wp-block-navigation-view-js"></script>
+<script src="/wp-includes/blocks/navigation/view-modal.min.js?ver=b478fa3cd1475dec97d3" id="wp-block-navigation-view-2-js"></script>
+<script src="/wp-content/plugins/wp-dark-mode/assets/js/dark-mode.min.js?ver=4.2.4" id="wp-dark-mode-js-js"></script>
+<script id="wp-dark-mode-frontend-js-extra">var wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_preset":"","customize_colors":"","colors":{"bg":"#000","text":"#dfdedb","link":"#e58c17"},"enable_frontend":"1","enable_backend":"","enable_os_mode":"1","excludes":"rs-fullwidth-wrap, .mejs-container, ._channels-container","includes":"","is_excluded":"","remember_darkmode":"","default_mode":"","keyboard_shortcut":"1","url_parameter":"","images":"","videos":"","is_pro_active":"","is_ultimate_active":"","pro_version":"0","is_elementor_editor":"","is_block_editor":"","frontend_mode":"","pluginUrl":"\/wp-content\/plugins\/wp-dark-mode\/"};</script>
+<script src="/wp-content/plugins/wp-dark-mode/assets/js/frontend.min.js?ver=4.2.4" id="wp-dark-mode-frontend-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/607">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.2">
+<link rel="canonical" href="/moc/">
+<link rel="shortlink" href="/?p=607">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fmoc%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fmoc%2F#038;format=xml">
+<link rel="icon" href="/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-150x150.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-300x300.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-300x300.png">
+</head>
+
+<body class="page-template-default page page-id-607 wp-custom-logo wp-embed-responsive">
+
+<div class="wp-site-blocks">
+<header class="site-header wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide is-layout-flex wp-container-7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+<div class="wp-block-group alignwide is-horizontal is-content-justification-space-between is-layout-flex wp-container-5 wp-block-group-is-layout-flex" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+<figure class="wp-block-image size-full is-resized"><img decoding="async" src="/wp-content/uploads/2023/05/1-1.png" alt="" class="wp-image-549" width="80" height="80" srcset="/wp-content/uploads/2023/05/1-1.png 612w, /wp-content/uploads/2023/05/1-1-300x300.png 300w, /wp-content/uploads/2023/05/1-1-150x150.png 150w, /wp-content/uploads/2023/05/1-1-200x200.png 200w" sizes="(max-width: 80px) 100vw, 80px"></figure>
+
+
+<nav style="font-style:normal;font-weight:700;" class="has-tiny-plus-font-size is-responsive items-justified-left wp-block-navigation has-tiny-plus-font-size is-horizontal is-content-justification-left is-layout-flex wp-container-2 wp-block-navigation-is-layout-flex" aria-label="Navigation"><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+			<div class="wp-block-navigation__responsive-container  " id="modal-1">
+				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close>
+					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
+							<button aria-label="Close menu" data-micromodal-close class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+						<div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
+							<ul style="font-style:normal;font-weight:700;" class="wp-block-navigation__container has-tiny-plus-font-size is-responsive items-justified-left wp-block-navigation has-tiny-plus-font-size">
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/"><span class="wp-block-navigation-item__label"><strong>Home</strong></span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="#"><strong>Pages</strong></a><button aria-label="Pages submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul class="wp-block-navigation__submenu-container wp-block-navigation-submenu">
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about-me/"><span class="wp-block-navigation-item__label">About me</span><span class="wp-block-navigation-item__description">Get to know me better</span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/contact-me/"><span class="wp-block-navigation-item__label">Contact me</span><span class="wp-block-navigation-item__description">Let&#8217;s get in touch</span></a></li>
+</ul>
+</li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/blog/"><span class="wp-block-navigation-item__label"><strong>Blog</strong></span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item has-child open-on-hover-click current-menu-item lemmony-desktop wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="/moc/" aria-current="page"><strong>MOC</strong></a><button aria-label="MOC submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul class="wp-block-navigation__submenu-container lemmony-desktop wp-block-navigation-submenu">
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/fleeting-notes/"><span class="wp-block-navigation-item__label">Fleeting Notes</span><span class="wp-block-navigation-item__description">Unprocessed notes</span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/level-64/"><span class="wp-block-navigation-item__label">Level 64</span><span class="wp-block-navigation-item__description">Incomplete Notes</span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/permanent-notes/"><span class="wp-block-navigation-item__label">Permanent Notes</span><span class="wp-block-navigation-item__description">Completed/Processed Notes</span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/project-notes/"><span class="wp-block-navigation-item__label">Project Notes</span><span class="wp-block-navigation-item__description">All my projects are here</span></a></li>
+<li class="has-tiny-plus-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/reference-notes/"><span class="wp-block-navigation-item__label">Reference Notes</span><span class="wp-block-navigation-item__description">Track Reference Information</span></a></li>
+</ul>
+</li>
+</ul>
+						</div>
+					</div>
+				</div>
+			</div></nav>
+
+
+<div class="wp-block-group lemmony-mobile-hidden is-nowrap is-layout-flex wp-container-4 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0">
+	<div class="wp-block-group is-layout-flow wp-container-61 wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:128px;padding-bottom:128px">
+	<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><h2 style="padding-bottom:var(--wp--preset--spacing--50);" class="has-text-align-center wp-block-post-title">MOC</h2></div>
+	
+	
+	<div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<figure class="wp-block-image alignfull size-large"><img decoding="async" fetchpriority="high" width="1024" height="576" src="/wp-content/uploads/2023/05/feature-7-1024x576.webp" alt="" class="wp-image-609" srcset="/wp-content/uploads/2023/05/feature-7-1024x576.webp 1024w, /wp-content/uploads/2023/05/feature-7-300x169.webp 300w, /wp-content/uploads/2023/05/feature-7-768x432.webp 768w, /wp-content/uploads/2023/05/feature-7-1536x864.webp 1536w, /wp-content/uploads/2023/05/feature-7-520x293.webp 520w, /wp-content/uploads/2023/05/feature-7-920x518.webp 920w, /wp-content/uploads/2023/05/feature-7.webp 1920w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p>This is how my notes are segregated over time. I&#8217;ve divided my content with different labels/categories, which can help understand the content&#8217;s purpose and also if that piece of content needs more work.</p>
+
+
+
+<p class="has-link-color wp-elements-92635f8abd241d4d1a00259c69926d75">My goal is to create a digital zettelkasten that I can where I can manage all the things I&#8217;ve learned about in one place. Feel free to check out <strong><a href="/what-is-a-pkm-and-why-should-you-care/"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-meta-color">Personal Knowledge Management</mark></a></strong> and how you can use the techniques described there to make your own PKM.</p>
+
+
+
+<figure class="wp-block-image alignwide size-full is-style-default lemmony-animation wp-duotone-unset-10" style="--lemmony-animation-name:lemmonyFadeIn"><img decoding="async" width="1728" height="1080" src="/wp-content/uploads/2023/06/feature-1.webp" alt="" class="wp-image-754" srcset="/wp-content/uploads/2023/06/feature-1.webp 1728w, /wp-content/uploads/2023/06/feature-1-300x188.webp 300w, /wp-content/uploads/2023/06/feature-1-1024x640.webp 1024w, /wp-content/uploads/2023/06/feature-1-768x480.webp 768w, /wp-content/uploads/2023/06/feature-1-1536x960.webp 1536w" sizes="(max-width: 1728px) 100vw, 1728px"></figure>
+
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-53 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+<div class="wp-block-columns alignwide is-layout-flex wp-container-30 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-container-15 wp-block-column-is-layout-flow">
+<h2 class="wp-block-heading has-large-font-size">MOCs</h2>
+
+
+
+<p><strong>Maps Of Content</strong> or <strong>MOCs</strong> are nothing more than a dashboard on a specific topic. They are there to provide an easy way to access and absorb any content on the site.</p>
+
+
+
+<div class="wp-block-group lemmony-group-squeeze is-content-justification-left is-nowrap is-layout-flex wp-container-14 wp-block-group-is-layout-flex" style="padding-left:var(--wp--preset--spacing--20)">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded lemmony-animation" style="--lemmony-animation-name:lemmonyFadeInRight;animation-duration:var(--lemmony-speed-xfast)"><img decoding="async" src="/wp-content/themes/lemmony/assets/media/content/front-client1.jpg" alt="" class="has-border-color has-background-border-color wp-image-2974" style="border-width:4px;width:80px;height:80px" width="80" height="80"></figure>
+</div>
+
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded lemmony-animation" style="--lemmony-animation-name:lemmonyFadeInRight;animation-duration:var(--lemmony-speed-xfast);animation-delay:var(--lemmony-delay-xsmall)"><img decoding="async" loading="lazy" src="/wp-content/themes/lemmony/assets/media/content/front-client2.jpg" alt="" class="has-border-color has-background-border-color wp-image-2975" style="border-width:4px;width:80px;height:80px" width="80" height="80"></figure>
+</div>
+
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0/">
+<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded lemmony-animation" style="--lemmony-animation-name:lemmonyFadeInRight;animation-duration:var(--lemmony-speed-xfast);animation-delay:var(--lemmony-delay-small)"><img decoding="async" loading="lazy" src="/wp-content/themes/lemmony/assets/media/content/front-client3.jpg" alt="" class="has-border-color has-background-border-color wp-image-2976" style="border-width:4px;width:80px;height:80px" width="80" height="80"></figure>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-style-hover-bg lemmony-animation has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:24px;padding-top:40px;padding-right:var(--wp--preset--spacing--30);padding-bottom:40px;padding-left:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn">
+<div class="wp-block-columns is-layout-flex wp-container-20 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:36px">
+<div class="wp-block-lemmony-companion-icon has-medium-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><path d="M19.639,30.245H6.504c-2.757,0-5-2.243-5-5v-0.508c-0.005-0.06-0.005-0.118,0-0.178V12.111c0-2.757,2.243-5,5-5h13.135 c2.757,0,5,2.243,5,5v12.026c0.001,0.029,0.001,0.059,0,0.088v1.021C24.639,28.002,22.396,30.245,19.639,30.245z M3.504,25.064 v0.182c0,1.654,1.346,3,3,3h13.135c1.654,0,3-1.346,3-3v-0.651l-6.561-6.561l-5.165,5.165l0,0 c-0.001,0.004-0.001,0.002-0.002,0.002c0,0.001,0-0.001-0.002,0.003c0,0,0.002,0.005-0.002,0.002l0,0.001 c-0.002,0-0.003,0.002-0.002,0.002c0,0.001-0.001,0.001-0.002,0.002l0,0c-0.001,0.001-0.001,0.001-0.002,0.002c0,0,0,0,0,0 c-0.392,0.377-1.014,0.373-1.4-0.014c-0.001-0.001-0.002-0.002-0.002-0.003l-2.028-2.028L3.504,25.064z M6.504,9.111 c-1.654,0-3,1.346-3,3v10.148l3.269-3.213c0.392-0.385,1.021-0.383,1.408,0.006l2.025,2.025l5.165-5.165 c0.391-0.391,1.023-0.391,1.414,0l5.854,5.854v-9.655c0-1.654-1.346-3-3-3H6.504z M29.5,20.798c-0.553,0-1-0.447-1-1V7.755 c0-2.206-1.794-4-4-4H12.447c-0.552,0-1-0.448-1-1s0.448-1,1-1H24.5c3.309,0,6,2.691,6,6v12.043 C30.5,20.351,30.053,20.798,29.5,20.798z M8.785,12.201c-1.049,0-1.9,0.85-1.9,1.9s0.85,1.9,1.9,1.9s1.9-0.85,1.9-1.9 S9.834,12.201,8.785,12.201z"></path></svg></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-19 wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<h3 class="wp-block-heading has-small-plus-font-size"><strong>Fleeting Notes</strong></h3>
+
+
+
+<p class="has-normal-font-size">Fleeting notes are ideas that are captured in a quick and easy-to-digest format.</p>
+
+
+
+<p class="has-normal-font-size">These are not complete ideas and are often nothing more than a few points. These can mostly be found in <strong>level 64</strong>.</p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-18 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-17 wp-block-buttons-is-layout-flex" style="text-decoration:underline">
+<div class="wp-block-button has-custom-font-size has-tiny-plus-font-size" style="font-style:normal;font-weight:700"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" href="#" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Explore More</a></div>
+</div>
+
+
+
+<div class="wp-block-lemmony-companion-icon has-small-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><polygon points="21.418,24.789 20.004,23.375 26.379,17 1.793,17 1.793,15 26.379,15 20.004,8.625 21.418,7.211 30.207,16 "></polygon></svg></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-style-hover-bg lemmony-animation has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:24px;padding-top:40px;padding-right:var(--wp--preset--spacing--30);padding-bottom:40px;padding-left:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn;animation-delay:var(--lemmony-delay-xsmall)">
+<div class="wp-block-columns is-layout-flex wp-container-27 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:36px">
+<div class="wp-block-lemmony-companion-icon has-medium-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><path d="M14.228,30.5c-0.109,0-0.22-0.018-0.328-0.055c-0.433-0.15-0.708-0.576-0.668-1.033l0.904-10.288H7.542 c-0.367,0-0.705-0.201-0.88-0.524c-0.174-0.323-0.158-0.716,0.043-1.023L16.931,1.952c0.251-0.384,0.731-0.548,1.164-0.397 c0.434,0.15,0.709,0.576,0.669,1.032L17.86,12.87h6.599c0.367,0,0.705,0.201,0.88,0.524s0.158,0.716-0.043,1.023l-10.23,15.63 C14.876,30.336,14.558,30.5,14.228,30.5z M9.391,17.124h5.836c0.28,0,0.548,0.118,0.737,0.324c0.189,0.207,0.283,0.484,0.259,0.764 l-0.651,7.407l7.036-10.75h-5.841c-0.28,0-0.548-0.118-0.737-0.325c-0.189-0.207-0.283-0.483-0.259-0.763l0.651-7.401L9.391,17.124 z"></path></svg></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-26 wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<h3 class="wp-block-heading has-small-plus-font-size"><strong><a href="https://exiasgarden.pages.dev/moc/level-64/">Level 64</a></strong></h3>
+
+
+
+<p class="has-normal-font-size">A page where I keep all my fleeting notes, &#8220;<strong>A work in progress</strong>&#8221; This is the place where my incomplete ideas and notes are stored.</p>
+
+
+
+<p class="has-normal-font-size">I keep them here, so anyone can see them to an idea of what I might be writing about.</p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-25 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-24 wp-block-buttons-is-layout-flex" style="text-decoration:underline">
+<div class="wp-block-button has-custom-font-size has-tiny-plus-font-size" style="font-style:normal;font-weight:700"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" href="#" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Explore More</a></div>
+</div>
+
+
+
+<div class="wp-block-lemmony-companion-icon has-small-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><polygon points="21.418,24.789 20.004,23.375 26.379,17 1.793,17 1.793,15 26.379,15 20.004,8.625 21.418,7.211 30.207,16 "></polygon></svg></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-52 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-style-hover-bg lemmony-animation has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:24px;padding-top:40px;padding-right:var(--wp--preset--spacing--30);padding-bottom:40px;padding-left:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn;animation-delay:var(--lemmony-delay-xsmall)">
+<div class="wp-block-columns is-layout-flex wp-container-35 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:36px">
+<div class="wp-block-lemmony-companion-icon has-medium-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><path d="M20.593,30.5h-9.186c-2.757,0-5-2.243-5-5v-19c0-2.757,2.243-5,5-5h9.186c2.757,0,5,2.243,5,5v19 C25.593,28.257,23.35,30.5,20.593,30.5z M11.407,3.5c-1.654,0-3,1.346-3,3v19c0,1.654,1.346,3,3,3h9.186c1.654,0,3-1.346,3-3v-19 c0-1.654-1.346-3-3-3H11.407z M15.872,25.805c-0.084,0-0.17-0.011-0.256-0.033c-0.534-0.142-0.852-0.688-0.711-1.223 c0.142-0.534,0.694-0.864,1.227-0.728c0.534,0.142,0.856,0.672,0.715,1.206l-0.009,0.033 C16.719,25.509,16.314,25.805,15.872,25.805z M17.824,8.001h-3.907c-0.552,0-1-0.448-1-1s0.448-1,1-1h3.907c0.553,0,1,0.448,1,1 S18.377,8.001,17.824,8.001z"></path></svg></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-34 wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<h3 class="wp-block-heading has-small-plus-font-size">Literature Notes</h3>
+
+
+
+<p class="has-tiny-plus-font-size">Literature notes are to help me record ideas and information from various sources, these can be books, articles, podcasts, YouTube, etc.</p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-33 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-32 wp-block-buttons-is-layout-flex" style="text-decoration:underline">
+<div class="wp-block-button has-custom-font-size has-tiny-plus-font-size" style="font-style:normal;font-weight:700"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" href="#" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Explore More</a></div>
+</div>
+
+
+
+<div class="wp-block-lemmony-companion-icon has-small-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><polygon points="21.418,24.789 20.004,23.375 26.379,17 1.793,17 1.793,15 26.379,15 20.004,8.625 21.418,7.211 30.207,16 "></polygon></svg></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-style-hover-bg lemmony-animation has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:24px;padding-top:40px;padding-right:var(--wp--preset--spacing--30);padding-bottom:40px;padding-left:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn;animation-delay:var(--lemmony-delay-xsmall)">
+<div class="wp-block-columns is-layout-flex wp-container-42 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:36px">
+<div class="wp-block-lemmony-companion-icon has-medium-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><path d="M11.448,27.938c-2.67,0-5.341-0.688-7.723-2.063c-0.495-0.286-0.939-0.645-1.32-1.064c-0.86-0.948-1.127-2.253-0.713-3.491 c0.429-1.279,1.511-2.23,2.826-2.48l0.141-0.026c4.599-0.877,9.26-0.863,13.856,0.038c1.278,0.25,2.298,1.138,2.727,2.373 c0.42,1.21,0.178,2.509-0.649,3.473c-0.404,0.471-0.882,0.867-1.421,1.179C16.789,27.249,14.118,27.938,11.448,27.938z M4.89,20.803c-0.722,0.138-1.146,0.685-1.302,1.15c-0.087,0.261-0.232,0.929,0.298,1.513c0.242,0.267,0.524,0.494,0.839,0.677 c4.146,2.393,9.299,2.393,13.446-0.001c0.343-0.197,0.646-0.45,0.903-0.749c0.363-0.424,0.465-0.976,0.277-1.514 c-0.192-0.556-0.649-0.954-1.222-1.066c-4.343-0.851-8.751-0.864-13.099-0.036L4.89,20.803z M24.569,25.372 c-0.498,0-0.929-0.37-0.991-0.877c-0.068-0.548,0.321-1.048,0.869-1.115c1.176-0.146,2.293-0.521,3.32-1.113 c0.242-0.14,0.451-0.325,0.618-0.551c0.171-0.229,0.115-0.476,0.066-0.603c-0.08-0.206-0.28-0.448-0.603-0.512 c-1.098-0.215-2.206-0.351-3.308-0.405c-0.552-0.028-0.977-0.497-0.949-1.049c0.028-0.553,0.505-0.989,1.049-0.949 c1.197,0.061,2.401,0.208,3.581,0.438c0.949,0.186,1.747,0.857,2.095,1.756c0.331,0.855,0.209,1.797-0.326,2.517 c-0.332,0.446-0.743,0.812-1.224,1.09c-1.261,0.727-2.631,1.187-4.074,1.365C24.651,25.37,24.61,25.372,24.569,25.372z M23.657,15.53c-2.323,0-4.214-1.89-4.214-4.214s1.891-4.214,4.214-4.214s4.214,1.89,4.214,4.214S25.98,15.53,23.657,15.53z M23.657,9.102c-1.221,0-2.214,0.993-2.214,2.214s0.993,2.214,2.214,2.214s2.214-0.993,2.214-2.214S24.877,9.102,23.657,9.102z M11.319,15.53c-3.162,0-5.734-2.572-5.734-5.734s2.572-5.734,5.734-5.734s5.733,2.572,5.733,5.734S14.48,15.53,11.319,15.53z M11.319,6.062c-2.059,0-3.734,1.675-3.734,3.734s1.675,3.734,3.734,3.734s3.734-1.675,3.734-3.734S13.378,6.062,11.319,6.062z"></path></svg></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-41 wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<h3 class="wp-block-heading has-small-plus-font-size"><strong><a href="https://exiasgarden.pages.dev/categories/reference-notes/">Reference Notes</a></strong></h3>
+
+
+
+<p class="has-tiny-plus-font-size">Reference notes are used to record and track reference information. These also act like Wikipedia at times.</p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-40 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-39 wp-block-buttons-is-layout-flex" style="text-decoration:underline">
+<div class="wp-block-button has-custom-font-size has-tiny-plus-font-size" style="font-style:normal;font-weight:700"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" href="#" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Explore More</a></div>
+</div>
+
+
+
+<div class="wp-block-lemmony-companion-icon has-small-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><polygon points="21.418,24.789 20.004,23.375 26.379,17 1.793,17 1.793,15 26.379,15 20.004,8.625 21.418,7.211 30.207,16 "></polygon></svg></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-style-hover-bg lemmony-animation has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:24px;padding-top:40px;padding-right:var(--wp--preset--spacing--30);padding-bottom:40px;padding-left:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn;animation-delay:var(--lemmony-delay-xsmall)">
+<div class="wp-block-columns is-layout-flex wp-container-49 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:36px">
+<div class="wp-block-lemmony-companion-icon has-medium-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><path d="M16.001,30.69c-0.797,0-1.593-0.234-2.273-0.703l-2.384-1.646c-0.234-0.162-0.496-0.271-0.778-0.322l-2.848-0.521 c-1.625-0.298-2.917-1.589-3.214-3.214l-0.521-2.85c-0.051-0.276-0.162-0.545-0.322-0.776l-1.646-2.384 c-0.939-1.359-0.939-3.186,0-4.545c0,0,0,0,0,0l1.646-2.384c0.162-0.234,0.27-0.496,0.321-0.775l0.522-2.85 c0.297-1.625,1.588-2.917,3.214-3.215l2.85-0.521c0.281-0.051,0.542-0.159,0.776-0.321l2.384-1.646c1.36-0.939,3.187-0.939,4.546,0 l2.384,1.646c0.231,0.16,0.5,0.271,0.776,0.321l2.85,0.521c1.625,0.298,2.916,1.59,3.214,3.215l0.521,2.849 c0.052,0.281,0.16,0.542,0.322,0.777l1.646,2.383c0.938,1.36,0.938,3.187,0,4.546l-1.646,2.384 c-0.162,0.233-0.271,0.496-0.322,0.778l-0.521,2.848c-0.298,1.625-1.589,2.917-3.214,3.214l-2.85,0.521 c-0.28,0.052-0.543,0.16-0.776,0.322l-2.384,1.646C17.593,30.456,16.797,30.69,16.001,30.69z M3.66,14.864L3.66,14.864 c-0.469,0.68-0.469,1.594,0,2.273l1.646,2.384c0.325,0.471,0.541,0.993,0.643,1.554l0.521,2.849 c0.149,0.812,0.794,1.458,1.607,1.607l2.85,0.521c0.562,0.104,1.084,0.319,1.552,0.643l2.384,1.646c0.68,0.472,1.595,0.471,2.272,0 l2.384-1.646c0.469-0.322,0.99-0.539,1.552-0.643l2.852-0.521c0.812-0.149,1.457-0.795,1.606-1.607l0.521-2.849 c0.104-0.563,0.32-1.085,0.643-1.554l1.646-2.384c0.47-0.679,0.469-1.593,0-2.273l-1.646-2.383 c-0.323-0.468-0.539-0.99-0.643-1.551L25.53,8.078c-0.149-0.813-0.795-1.459-1.606-1.607l-2.85-0.521 c-0.562-0.103-1.084-0.319-1.554-0.644L17.136,3.66c-0.679-0.469-1.593-0.468-2.273,0l-2.383,1.646 c-0.47,0.325-0.992,0.541-1.554,0.644L8.078,6.471C7.265,6.619,6.62,7.265,6.471,8.078l-0.522,2.85 c-0.102,0.56-0.318,1.083-0.642,1.552L3.66,14.864z M12.172,20.829c-0.256,0-0.512-0.098-0.707-0.293 c-0.391-0.391-0.391-1.023,0-1.414l7.656-7.656c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-7.656,7.656 C12.684,20.731,12.428,20.829,12.172,20.829z M19.552,20.753c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414 l0.2-0.2c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-0.2,0.2C20.064,20.655,19.808,20.753,19.552,20.753z M12.294,13.494c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l0.2-0.2c0.391-0.391,1.023-0.391,1.414,0 s0.391,1.023,0,1.414l-0.2,0.2C12.805,13.396,12.549,13.494,12.294,13.494z"></path></svg></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-48 wp-block-column-is-layout-flow" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:66.66%">
+<h3 class="wp-block-heading has-small-plus-font-size"><strong><a href="https://exiasgarden.pages.dev/categories/permanent-notes/">Permanent Notes</a></strong></h3>
+
+
+
+<p class="has-tiny-plus-font-size">Permanent notes are notes that are processed ideas. These are notes that I&#8217;ve edited enough that they can explain the ideas on their own, they are completed notes.</p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-47 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-46 wp-block-buttons-is-layout-flex" style="text-decoration:underline">
+<div class="wp-block-button has-custom-font-size has-tiny-plus-font-size" style="font-style:normal;font-weight:700"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" href="#" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Explore More</a></div>
+</div>
+
+
+
+<div class="wp-block-lemmony-companion-icon has-small-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><polygon points="21.418,24.789 20.004,23.375 26.379,17 1.793,17 1.793,15 26.379,15 20.004,8.625 21.418,7.211 30.207,16 "></polygon></svg></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-group is-style-hover-bg lemmony-animation has-global-padding is-layout-constrained wp-container-59 wp-block-group-is-layout-constrained" style="border-radius:24px;padding-top:40px;padding-right:var(--wp--preset--spacing--30);padding-bottom:40px;padding-left:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn;animation-delay:var(--lemmony-delay-xsmall)">
+<div class="wp-block-columns is-layout-flex wp-container-58 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:36px">
+<div class="wp-block-lemmony-companion-icon has-medium-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><path d="M16.001,30.69c-0.797,0-1.593-0.234-2.273-0.703l-2.384-1.646c-0.234-0.162-0.496-0.271-0.778-0.322l-2.848-0.521 c-1.625-0.298-2.917-1.589-3.214-3.214l-0.521-2.85c-0.051-0.276-0.162-0.545-0.322-0.776l-1.646-2.384 c-0.939-1.359-0.939-3.186,0-4.545c0,0,0,0,0,0l1.646-2.384c0.162-0.234,0.27-0.496,0.321-0.775l0.522-2.85 c0.297-1.625,1.588-2.917,3.214-3.215l2.85-0.521c0.281-0.051,0.542-0.159,0.776-0.321l2.384-1.646c1.36-0.939,3.187-0.939,4.546,0 l2.384,1.646c0.231,0.16,0.5,0.271,0.776,0.321l2.85,0.521c1.625,0.298,2.916,1.59,3.214,3.215l0.521,2.849 c0.052,0.281,0.16,0.542,0.322,0.777l1.646,2.383c0.938,1.36,0.938,3.187,0,4.546l-1.646,2.384 c-0.162,0.233-0.271,0.496-0.322,0.778l-0.521,2.848c-0.298,1.625-1.589,2.917-3.214,3.214l-2.85,0.521 c-0.28,0.052-0.543,0.16-0.776,0.322l-2.384,1.646C17.593,30.456,16.797,30.69,16.001,30.69z M3.66,14.864L3.66,14.864 c-0.469,0.68-0.469,1.594,0,2.273l1.646,2.384c0.325,0.471,0.541,0.993,0.643,1.554l0.521,2.849 c0.149,0.812,0.794,1.458,1.607,1.607l2.85,0.521c0.562,0.104,1.084,0.319,1.552,0.643l2.384,1.646c0.68,0.472,1.595,0.471,2.272,0 l2.384-1.646c0.469-0.322,0.99-0.539,1.552-0.643l2.852-0.521c0.812-0.149,1.457-0.795,1.606-1.607l0.521-2.849 c0.104-0.563,0.32-1.085,0.643-1.554l1.646-2.384c0.47-0.679,0.469-1.593,0-2.273l-1.646-2.383 c-0.323-0.468-0.539-0.99-0.643-1.551L25.53,8.078c-0.149-0.813-0.795-1.459-1.606-1.607l-2.85-0.521 c-0.562-0.103-1.084-0.319-1.554-0.644L17.136,3.66c-0.679-0.469-1.593-0.468-2.273,0l-2.383,1.646 c-0.47,0.325-0.992,0.541-1.554,0.644L8.078,6.471C7.265,6.619,6.62,7.265,6.471,8.078l-0.522,2.85 c-0.102,0.56-0.318,1.083-0.642,1.552L3.66,14.864z M12.172,20.829c-0.256,0-0.512-0.098-0.707-0.293 c-0.391-0.391-0.391-1.023,0-1.414l7.656-7.656c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-7.656,7.656 C12.684,20.731,12.428,20.829,12.172,20.829z M19.552,20.753c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414 l0.2-0.2c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-0.2,0.2C20.064,20.655,19.808,20.753,19.552,20.753z M12.294,13.494c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l0.2-0.2c0.391-0.391,1.023-0.391,1.414,0 s0.391,1.023,0,1.414l-0.2,0.2C12.805,13.396,12.549,13.494,12.294,13.494z"></path></svg></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-57 wp-block-column-is-layout-flow" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:66.66%">
+<h3 class="wp-block-heading has-small-plus-font-size"><a href="https://exiasgarden.pages.dev/categories/project-notes/">Project Notes</a></h3>
+
+
+
+<p class="has-tiny-plus-font-size">For documenting and processing ideas for a specific project. I use project notes.</p>
+
+
+
+<div class="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-56 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-55 wp-block-buttons-is-layout-flex" style="text-decoration:underline">
+<div class="wp-block-button has-custom-font-size has-tiny-plus-font-size" style="font-style:normal;font-weight:700"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" href="#" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Explore More</a></div>
+</div>
+
+
+
+<div class="wp-block-lemmony-companion-icon has-small-plus-font-size"><div class="lemmony-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" data-reactroot=""><polygon points="21.418,24.789 20.004,23.375 26.379,17 1.793,17 1.793,15 26.379,15 20.004,8.625 21.418,7.211 30.207,16 "></polygon></svg></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	</main>
+	
+	
+	<footer class="site-footer wp-block-template-part">
+<div class="wp-block-group alignfull lemmony-mobile-text-center has-body-alt-color has-text-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#111111;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60)">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns alignwide are-vertically-aligned-center is-layout-flex wp-container-66 wp-block-columns-is-layout-flex" style="padding-bottom:var(--wp--preset--spacing--50)">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:48%">
+<h2 class="wp-block-heading lemmony-animation has-huge-font-size lemmony-animation" style="font-style:normal;font-weight:400;line-height:1.2;--lemmony-animation-name:lemmonyFadeInUp"><strong>Find Everything With a Simple Search!</strong></h2>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center lemmony-mobile-left is-layout-flow wp-block-column-is-layout-flow"><form role="search" method="get" action="https://dev-exiasgarden.pantheonsite.io/" class="wp-block-search__no-button aligncenter is-style-border-with-radius wp-block-search">
+<label class="wp-block-search__label screen-reader-text" for="wp-block-search__input-64">Search</label><div class="wp-block-search__inside-wrapper " style="width: 100%"><input class="wp-block-search__input" id="wp-block-search__input-64" placeholder="Can&#039;t find it?! 🙄" value="" type="search" name="s" required style="border-radius: 38px"></div>
+</form></div>
+</div>
+
+
+
+<hr class="wp-block-separator alignwide has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--70);background-color:#575656;color:#575656">
+
+
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-73 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--20)">
+<div class="wp-block-column is-layout-flow wp-container-67 wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full is-resized lemmony-animation lemmony-animation" style="--lemmony-animation-name:lemmonyFadeInUp;animation-delay:var(--lemmony-delay-xsmall)"><img decoding="async" loading="lazy" src="/wp-content/uploads/2023/05/1-1.png" alt="" class="wp-image-549" width="153" height="153" srcset="/wp-content/uploads/2023/05/1-1.png 612w, /wp-content/uploads/2023/05/1-1-300x300.png 300w, /wp-content/uploads/2023/05/1-1-150x150.png 150w, /wp-content/uploads/2023/05/1-1-200x200.png 200w" sizes="(max-width: 153px) 100vw, 153px"></figure>
+
+
+
+<p class="has-text-align-center lemmony-animation has-body-alt-color has-text-color has-small-plus-font-size lemmony-animation" style="--lemmony-animation-name:lemmonyFadeInUp;animation-delay:var(--lemmony-delay-xsmall)">A place where I share too much about myself</p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-columns lemmony-animation lemmony-animation is-layout-flex wp-container-71 wp-block-columns-is-layout-flex" style="--lemmony-animation-name:lemmonyFadeIn;animation-duration:var(--lemmony-speed-slow);animation-delay:var(--lemmony-delay-small)">
+<div class="wp-block-column is-layout-flow wp-container-68 wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading has-small-plus-font-size" style="margin-bottom:var(--wp--preset--spacing--20)">Useful Links</h3>
+
+
+
+<p class="has-paragraph-color has-text-color has-small-font-size"><a href="/about-me/">About Me</a></p>
+
+
+
+<p class="has-body-alt-color has-text-color has-small-font-size"><a href="/blog/">Blog</a></p>
+
+
+
+<p class="has-body-alt-color has-text-color has-small-font-size"><a href="/moc/">MOC</a></p>
+
+
+
+<p class="has-paragraph-color has-text-color has-small-font-size"><a href="/anime/">Anime</a></p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-69 wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading has-small-plus-font-size" style="margin-bottom:var(--wp--preset--spacing--20)">Contact Me</h3>
+
+
+
+<p class="has-body-alt-color has-text-color has-small-font-size"><a href="/contact-me/">Contact page</a></p>
+
+
+
+<p class="has-body-color has-text-color has-small-font-size"><a href="/moc/wolfr13@proton.me">wolfr13@proton.com</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-container-70 wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading has-small-plus-font-size" style="margin-bottom:var(--wp--preset--spacing--20)">Socials</h3>
+
+
+
+<p class="has-body-alt-color has-text-color has-small-font-size"><a href="https://twitter.com/exia_darkstar">Twitter</a></p>
+
+
+
+<p class="has-body-alt-color has-text-color has-small-font-size"><a href="https://youtube.com/@00exia00">Youtube</a></p>
+
+
+
+<p class="has-paragraph-color has-text-color has-small-font-size"><a href="http://exiaoo/#9366" data-type="URL" data-id="exiaoo#9366">Discord</a></p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns alignwide lemmony-animation lemmony-animation is-layout-flex wp-container-76 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--30);--lemmony-animation-name:lemmonyFadeIn;animation-delay:var(--lemmony-delay-small)">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:238px">
+<p class="has-text-color has-tiny-plus-font-size" style="color:#909090">© 2023. All rights reserved. </p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p class="has-body-alt-color has-text-color has-tiny-plus-font-size">Theme developed by <a href="https://shufflehound.com/" target="_blank" rel="noreferrer noopener"><span style="text-decoration: underline;">Shufflehound</span></a>.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+			<script>;(function () { window.wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_preset":false,"customize_colors":false,"colors":{"bg":"#000","text":"#dfdedb","link":"#e58c17"},"enable_frontend":true,"enable_backend":false,"enable_os_mode":true,"excludes":"rs-fullwidth-wrap, .mejs-container, ._channels-container","includes":"","is_excluded":false,"remember_darkmode":false,"default_mode":false,"keyboard_shortcut":true,"url_parameter":false,"images":"","videos":"","is_pro_active":false,"is_ultimate_active":false,"pro_version":0,"is_elementor_editor":false,"is_block_editor":false,"frontend_mode":false,"pluginUrl":"\/wp-content\/plugins\/wp-dark-mode\/"}; 
+					window.checkOsDarkMode = () => { if (!window.wpDarkMode.enable_os_mode || localStorage.getItem('wp_dark_mode_active')) return false; 
+						const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)'); 
+						if (darkMediaQuery.matches) return true; 
+						try { darkMediaQuery.addEventListener('change', function(e) { return e.matches == true; }); } catch (e1) { 
+							try { darkMediaQuery.addListener(function(e) { return e.matches == true; }); } catch (e2) { console.error(e2); return false; } } return false; }; 
+						const is_saved = localStorage.getItem('wp_dark_mode_active'); const shouldDarkMode = is_saved == '1' || (!is_saved && window.checkOsDarkMode()); 
+						if (shouldDarkMode) { const isCustomColor = parseInt("");
+							const isPerformanceMode = Boolean(); if (!isCustomColor && !isPerformanceMode) { if (document.getElementById('pre_css')) { document.getElementById('pre_css').remove(); } 
+							if ('' === ``) { if ( typeof DarkMode === 'object') DarkMode.enable(); } } } })();</script>
+			
+		<style id="skip-link-styles">.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+		<script>( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );</script>
+	<div class="wp-dark-mode-switcher wp-dark-mode-ignore style-3  floating left_bottom">
+
+	
+	<label for="wp-dark-mode-switch" class="wp-dark-mode-ignore wp-dark-mode-none">
+		<img class="sun-light" src="/wp-content/plugins/wp-dark-mode/assets/images/btn-3/sun.svg" alt="Light">
+
+		<div class="toggle wp-dark-mode-ignore"></div>
+
+		<img class="moon-light" src="/wp-content/plugins/wp-dark-mode/assets/images/btn-3/moon.svg" alt="Dark">
+	</label>
+</div>
+<script src="/wp-content/themes/lemmony/assets/libraries/simpleParallax/simpleParallax.min.js?ver=5.5.1" id="simpleparallax-js"></script>
+<script src="/wp-content/themes/lemmony/assets/libraries/countup/countup.min.js?ver=2.3.2" id="countup-js"></script>
+<script src="/wp-content/themes/lemmony/assets/libraries/typed/typed.min.js?ver=2.0.12" id="typed-js"></script>
+<script src="/wp-content/themes/lemmony/assets/js/scripts.js?ver=1.4" id="lemmony-scripts-js"></script>
+</body>
+</html>

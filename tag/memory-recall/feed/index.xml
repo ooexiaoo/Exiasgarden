@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Memory Recall &#8211; The Binary Philosopher</title>
+	<atom:link href="/tag/memory-recall/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>A Place Where I Share A Bit Too Much About Myself</description>
+	<lastBuildDate>Tue, 30 May 2023 10:25:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-150x150.png</url>
+	<title>Memory Recall &#8211; The Binary Philosopher</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Chunking</title>
+		<link>/chunking/</link>
+					<comments>/chunking/#respond</comments>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Wed, 08 Feb 2023 01:43:00 +0000</pubDate>
+				<category><![CDATA[Fleeting Notes]]></category>
+		<category><![CDATA[Memory Recall]]></category>
+		<guid isPermaLink="false">/?p=571</guid>
+
+					<description><![CDATA[Chunking Memory Techniques 1. First Letters (&#8220;acronyms&#8221;) A popular way of chunking is to take the first letters of a set of words you want to learn. 2. Made Up Phrases (&#8220;acrostics&#8221;) Acrostics is a bit like acronyms, but rather than a single word, you assign each letter a new word to make it more [&#8230;]]]></description>
+		
+					<wfw:commentRss>/chunking/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How To Remember All The Notes You Take</title>
+		<link>/how-to-remember-all-the-notes-you-take/</link>
+					<comments>/how-to-remember-all-the-notes-you-take/#respond</comments>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Wed, 08 Feb 2023 01:00:00 +0000</pubDate>
+				<category><![CDATA[Fleeting Notes]]></category>
+		<category><![CDATA[Memory Recall]]></category>
+		<guid isPermaLink="false">/?p=575</guid>
+
+					<description><![CDATA[Fleeting Notes It&#8217;s hard to remember everything that we learn, which like most people is a common thing to happen to everyone. So the question we are supposed to ask is what can we do to retain as much information as we can in the first place. What can you do so you don&#8217;t have [&#8230;]]]></description>
+		
+					<wfw:commentRss>/how-to-remember-all-the-notes-you-take/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
