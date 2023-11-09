@@ -11,11 +11,25 @@
 	<atom:link href="/random-password-generator/feed/" rel="self" type="application/rss+xml" />
 	<link>/random-password-generator/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 20 Jun 2023 16:52:05 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:26:28 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.3.2</generator>
-</channel>
+	<item>
+		<title>
+		By: exia		</title>
+		<link>/random-password-generator/#comment-5</link>
+
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Sun, 05 Nov 2023 12:22:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=872#comment-5</guid>
+
+					<description><![CDATA[does this work?]]></description>
+			<content:encoded><![CDATA[<p>does this work?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
 </rss>

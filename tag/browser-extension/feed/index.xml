@@ -12,7 +12,7 @@
 	<atom:link href="/tag/browser-extension/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 13 Jun 2023 19:36:51 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:28:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>😵 Panic Button</title>
 		<link>/%f0%9f%98%b5-panic-button/</link>
-					<comments>/%f0%9f%98%b5-panic-button/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 11 Jun 2023 09:20:12 +0000</pubDate>
@@ -40,8 +39,6 @@
 
 					<description><![CDATA[Here's the first extension I made. in a few hours]]></description>
 		
-					<wfw:commentRss>/%f0%9f%98%b5-panic-button/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

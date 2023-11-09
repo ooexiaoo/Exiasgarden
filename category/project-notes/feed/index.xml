@@ -12,7 +12,7 @@
 	<atom:link href="/category/project-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sun, 15 Oct 2023 12:19:40 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:28:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,7 @@
 	<item>
 		<title>Random Password Generator</title>
 		<link>/random-password-generator/</link>
-					<comments>/random-password-generator/#respond</comments>
+					<comments>/random-password-generator/#comments</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 18 Jun 2023 14:44:52 +0000</pubDate>
@@ -41,14 +41,13 @@
 					<description><![CDATA[Creating a simple password generator that can create hard to break random passwords]]></description>
 		
 					<wfw:commentRss>/random-password-generator/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>📚 Chapter 3 &#8211; Hovers, Transitions, Shadows</title>
 		<link>/%f0%9f%93%9a-chapter-3-hovers-transitions-shadows/</link>
-					<comments>/%f0%9f%93%9a-chapter-3-hovers-transitions-shadows/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Thu, 15 Jun 2023 16:37:13 +0000</pubDate>
@@ -58,15 +57,12 @@
 
 					<description><![CDATA[In this chapter we jump into Pseudo class, hovers, and more.]]></description>
 		
-					<wfw:commentRss>/%f0%9f%93%9a-chapter-3-hovers-transitions-shadows/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>📚 Chapter 1 &#038; 2 &#8211; Basic HTML &#038; CSS</title>
 		<link>/%f0%9f%93%9a-chapter-1-2-basic-html-css/</link>
-					<comments>/%f0%9f%93%9a-chapter-1-2-basic-html-css/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2023 17:46:51 +0000</pubDate>
@@ -76,15 +72,12 @@
 
 					<description><![CDATA[These are some of the notes that I took when I was learning HTML/CSS]]></description>
 		
-					<wfw:commentRss>/%f0%9f%93%9a-chapter-1-2-basic-html-css/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>😵 Panic Button</title>
 		<link>/%f0%9f%98%b5-panic-button/</link>
-					<comments>/%f0%9f%98%b5-panic-button/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 11 Jun 2023 09:20:12 +0000</pubDate>
@@ -94,15 +87,12 @@
 
 					<description><![CDATA[Here's the first extension I made. in a few hours]]></description>
 		
-					<wfw:commentRss>/%f0%9f%98%b5-panic-button/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>DIY Browser Homepage</title>
 		<link>/diy-browser-homepage/</link>
-					<comments>/diy-browser-homepage/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Wed, 07 Jun 2023 14:25:56 +0000</pubDate>
@@ -112,8 +102,6 @@
 
 					<description><![CDATA[A simple browser homepage that I wanted to make for a long time 👍🏻]]></description>
 		
-					<wfw:commentRss>/diy-browser-homepage/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

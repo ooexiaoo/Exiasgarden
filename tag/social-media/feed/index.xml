@@ -12,7 +12,7 @@
 	<atom:link href="/tag/social-media/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 30 May 2023 10:21:35 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:28:52 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>📱 Life Without Social Media</title>
 		<link>/%f0%9f%93%b1-life-without-social-media/</link>
-					<comments>/%f0%9f%93%b1-life-without-social-media/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 11 Dec 2022 09:58:00 +0000</pubDate>
@@ -42,8 +41,6 @@
 
 					<description><![CDATA[Here&#8217;s a bit of an intro. The reason I uninstalled all my social media apps was with the realization that I might be too addicted to using these apps on a daily basis. The problem with any kind of addiction is that you don&#8217;t realize that you&#8217;re addicted. You&#8217;d see examples of these everywhere. Ask [&#8230;]]]></description>
 		
-					<wfw:commentRss>/%f0%9f%93%b1-life-without-social-media/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

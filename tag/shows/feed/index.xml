@@ -12,7 +12,7 @@
 	<atom:link href="/tag/shows/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Wed, 31 May 2023 13:57:31 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:28:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -49,7 +49,6 @@
 		<item>
 		<title>Tokyo Revengers &#8211; Seiya Kessen-hen</title>
 		<link>/tokyo-revengers-seiya-kessen-hen/</link>
-					<comments>/tokyo-revengers-seiya-kessen-hen/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 12 Feb 2023 07:04:00 +0000</pubDate>
@@ -60,15 +59,12 @@
 
 					<description><![CDATA[I&#8217;ve kinda forgotten most of the 1st season. It&#8217;s very shonen like so I&#8217;m going to skip this one.]]></description>
 		
-					<wfw:commentRss>/tokyo-revengers-seiya-kessen-hen/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Tomo-chan wa Onnanoko!</title>
 		<link>/tomo-chan-wa-onnanoko/</link>
-					<comments>/tomo-chan-wa-onnanoko/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sat, 11 Feb 2023 07:00:00 +0000</pubDate>
@@ -79,15 +75,12 @@
 
 					<description><![CDATA[]]></description>
 		
-					<wfw:commentRss>/tomo-chan-wa-onnanoko/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu</title>
 		<link>/ningen-fushin-no-boukensha-tachi-ga-sekai-wo-sukuu-you-desu/</link>
-					<comments>/ningen-fushin-no-boukensha-tachi-ga-sekai-wo-sukuu-you-desu/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Thu, 02 Feb 2023 12:25:00 +0000</pubDate>
@@ -98,8 +91,6 @@
 
 					<description><![CDATA[Lovable characters, good backstories, but nothing to write home about. The stories are mostly copy and paste job from other anime mixed in together, but that doesn&#8217;t mean that it&#8217;s not a good show. I would say that the storytelling feels like it&#8217;s made for very young kids, like 12-13, but they added adult themes [&#8230;]]]></description>
 		
-					<wfw:commentRss>/ningen-fushin-no-boukensha-tachi-ga-sekai-wo-sukuu-you-desu/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

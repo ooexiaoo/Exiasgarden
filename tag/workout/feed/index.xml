@@ -12,7 +12,7 @@
 	<atom:link href="/tag/workout/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sat, 10 Jun 2023 11:17:17 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:27:58 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>My Push Pull Legs Workout</title>
 		<link>/my-push-pull-legs-workout/</link>
-					<comments>/my-push-pull-legs-workout/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sat, 10 Jun 2023 11:17:16 +0000</pubDate>
@@ -40,8 +39,6 @@
 
 					<description><![CDATA[The workout plan I follow is simple and easy to follow, You can do this at home with some basic equipments]]></description>
 		
-					<wfw:commentRss>/my-push-pull-legs-workout/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

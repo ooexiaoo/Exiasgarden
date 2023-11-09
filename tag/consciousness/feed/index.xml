@@ -12,7 +12,7 @@
 	<atom:link href="/tag/consciousness/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Thu, 01 Jun 2023 07:28:56 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:27:35 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>Thoughts On A.I Consciousness</title>
 		<link>/thoughts-on-a-i-consciousness/</link>
-					<comments>/thoughts-on-a-i-consciousness/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Mon, 27 Feb 2023 17:56:00 +0000</pubDate>
@@ -41,8 +40,6 @@
 
 					<description><![CDATA[Here are some of my thoughts on the recent lunacy going on with A.I becoming conscious.]]></description>
 		
-					<wfw:commentRss>/thoughts-on-a-i-consciousness/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

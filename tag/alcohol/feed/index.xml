@@ -12,7 +12,7 @@
 	<atom:link href="/tag/alcohol/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Thu, 01 Jun 2023 09:44:24 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:28:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>What Alcohol Does To Your Body, Brain &#038; Health</title>
 		<link>/what-alcohol-does-to-your-body-brain-health/</link>
-					<comments>/what-alcohol-does-to-your-body-brain-health/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 25 Dec 2022 13:29:00 +0000</pubDate>
@@ -41,8 +40,6 @@
 
 					<description><![CDATA[All of the text is converted from a diagram that I made as it&#8217;s quite hard to showcase the whole diagram here Even low consumption of alcohol, such as 1 drink per day (or 5-7 a week) has been shown to cause thinning of neocortex and other brain regions. Alcohol is both water and fat [&#8230;]]]></description>
 		
-					<wfw:commentRss>/what-alcohol-does-to-your-body-brain-health/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

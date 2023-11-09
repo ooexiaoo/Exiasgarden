@@ -12,7 +12,7 @@
 	<atom:link href="/tag/password-generator/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 20 Jun 2023 16:52:05 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:26:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,7 @@
 	<item>
 		<title>Random Password Generator</title>
 		<link>/random-password-generator/</link>
-					<comments>/random-password-generator/#respond</comments>
+					<comments>/random-password-generator/#comments</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 18 Jun 2023 14:44:52 +0000</pubDate>
@@ -41,7 +41,7 @@
 					<description><![CDATA[Creating a simple password generator that can create hard to break random passwords]]></description>
 		
 					<wfw:commentRss>/random-password-generator/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+			<slash:comments>1</slash:comments>
 		
 		
 			</item>

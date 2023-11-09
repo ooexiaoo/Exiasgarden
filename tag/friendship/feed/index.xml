@@ -12,7 +12,7 @@
 	<atom:link href="/tag/friendship/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 30 May 2023 10:20:58 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:29:04 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>😇 How To Become A Good Friend</title>
 		<link>/%f0%9f%98%87-how-to-become-a-good-friend/</link>
-					<comments>/%f0%9f%98%87-how-to-become-a-good-friend/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 16 Oct 2022 15:17:00 +0000</pubDate>
@@ -41,8 +40,6 @@
 
 					<description><![CDATA[Who Is A Friend? It can be easy and hard to define what friendship is depending on who you&#8217;re talking to, but as I&#8217;m getting older the more I look into it, the better I feel about the friends that I have in my life. So who is a friend? A friend can be anyone, [&#8230;]]]></description>
 		
-					<wfw:commentRss>/%f0%9f%98%87-how-to-become-a-good-friend/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

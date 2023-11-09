@@ -12,7 +12,7 @@
 	<atom:link href="/tag/pkm/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 30 May 2023 10:22:09 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Nov 2023 12:28:47 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,7 +30,6 @@
 	<item>
 		<title>What Is A PKM And Why Should You Care</title>
 		<link>/what-is-a-pkm-and-why-should-you-care/</link>
-					<comments>/what-is-a-pkm-and-why-should-you-care/#respond</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Mon, 12 Dec 2022 10:38:00 +0000</pubDate>
@@ -40,8 +39,6 @@
 
 					<description><![CDATA[PKM in its full form is known as personal knowledge management, is a system which helps you keep a database of all the knowledge that is important to you in your life. We all have the same problem, which is remembering things that help us make sense of the world. You can use a PKM [&#8230;]]]></description>
 		
-					<wfw:commentRss>/what-is-a-pkm-and-why-should-you-care/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
