@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sun, 05 Nov 2023 12:28:03 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 12 Nov 2023 14:34:33 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,22 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>How Google&#8217;s SEO is Hurting the Internet</title>
+		<link>/how-googles-seo-is-hurting-the-internet/</link>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Sun, 12 Nov 2023 14:34:33 +0000</pubDate>
+				<category><![CDATA[Reference Notes]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[SEO]]></category>
+		<guid isPermaLink="false">/?p=971</guid>
+
+					<description><![CDATA[]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Obsidian &#8211; Daily Template</title>
 		<link>/914-2/</link>
 		
@@ -163,22 +179,6 @@
 					<description><![CDATA[Few notes on transactional analysis and how it affects our behavior.
 
 Still need to add more info.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Thoughts On A.I Consciousness</title>
-		<link>/thoughts-on-a-i-consciousness/</link>
-		
-		<dc:creator><![CDATA[exia]]></dc:creator>
-		<pubDate>Mon, 27 Feb 2023 17:56:00 +0000</pubDate>
-				<category><![CDATA[Fleeting Notes]]></category>
-		<category><![CDATA[A.I]]></category>
-		<category><![CDATA[Consciousness]]></category>
-		<guid isPermaLink="false">/?p=569</guid>
-
-					<description><![CDATA[Here are some of my thoughts on the recent lunacy going on with A.I becoming conscious.]]></description>
 		
 		
 		

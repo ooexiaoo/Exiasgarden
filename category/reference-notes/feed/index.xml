@@ -12,7 +12,7 @@
 	<atom:link href="/category/reference-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sun, 05 Nov 2023 12:29:16 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 12 Nov 2023 14:34:33 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,22 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>How Google&#8217;s SEO is Hurting the Internet</title>
+		<link>/how-googles-seo-is-hurting-the-internet/</link>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Sun, 12 Nov 2023 14:34:33 +0000</pubDate>
+				<category><![CDATA[Reference Notes]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[SEO]]></category>
+		<guid isPermaLink="false">/?p=971</guid>
+
+					<description><![CDATA[]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Obsidian &#8211; Daily Template</title>
 		<link>/914-2/</link>
 		
