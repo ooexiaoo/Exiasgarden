@@ -12,7 +12,7 @@
 	<atom:link href="/category/reference-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sun, 12 Nov 2023 14:34:33 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 13 Nov 2023 16:01:06 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,7 +21,7 @@
 	<generator>https://wordpress.org/?v=6.3.2</generator>
 
 <image>
-	<url>/wp-content/uploads/2023/09/cropped-avatar-ProfilePictureMaker.com_-150x150.png</url>
+	<url>/wp-content/uploads/2023/11/cropped-Name-Unknown-LOGO-150x150.webp</url>
 	<title>Reference Notes &#8211; The Binary Philosopher</title>
 	<link>/</link>
 	<width>32</width>
@@ -38,18 +38,20 @@
 		<category><![CDATA[SEO]]></category>
 		<guid isPermaLink="false">/?p=971</guid>
 
-					<description><![CDATA[]]></description>
+					<description><![CDATA[The shady practices of google that are ruining the internet on an unpresedented scale]]></description>
 		
 		
 		
 			</item>
 		<item>
 		<title>Obsidian &#8211; Daily Template</title>
-		<link>/914-2/</link>
+		<link>/obsidian-daily-template/</link>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Wed, 04 Oct 2023 05:44:53 +0000</pubDate>
 				<category><![CDATA[Reference Notes]]></category>
+		<category><![CDATA[Obsidian]]></category>
+		<category><![CDATA[Template]]></category>
 		<guid isPermaLink="false">/?p=914</guid>
 
 					<description><![CDATA[This is my simple obsidian daily notes template]]></description>
