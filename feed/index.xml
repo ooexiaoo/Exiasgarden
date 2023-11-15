@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>The Binary Philosopher</title>
+	<title>Name Unavailable</title>
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 14 Nov 2023 18:32:26 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 15 Nov 2023 21:45:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,12 +22,27 @@
 
 <image>
 	<url>/wp-content/uploads/2023/11/cropped-Name-Unknown-LOGO-150x150.webp</url>
-	<title>The Binary Philosopher</title>
+	<title>Name Unavailable</title>
 	<link>/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>An Encouraging Friend is All You Need</title>
+		<link>/an-encouraging-friend-is-all-you-need/</link>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Wed, 15 Nov 2023 21:45:39 +0000</pubDate>
+				<category><![CDATA[Fleeting Notes]]></category>
+		<category><![CDATA[Friendship]]></category>
+		<guid isPermaLink="false">/?p=1015</guid>
+
+					<description><![CDATA[Sometimes the simplest things makes us realize what truly matter in life]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>How Google&#8217;s SEO is Hurting the Internet</title>
 		<link>/how-googles-seo-is-hurting-the-internet/</link>
 		
@@ -163,24 +178,6 @@
 		<guid isPermaLink="false">/?p=782</guid>
 
 					<description><![CDATA[A simple browser homepage that I wanted to make for a long time 👍🏻]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Transactional Analysis</title>
-		<link>/transactional-analysis/</link>
-		
-		<dc:creator><![CDATA[exia]]></dc:creator>
-		<pubDate>Wed, 15 Mar 2023 18:44:00 +0000</pubDate>
-				<category><![CDATA[Fleeting Notes]]></category>
-		<category><![CDATA[Level 64]]></category>
-		<category><![CDATA[Psychology]]></category>
-		<guid isPermaLink="false">/?p=712</guid>
-
-					<description><![CDATA[Few notes on transactional analysis and how it affects our behavior.
-
-Still need to add more info.]]></description>
 		
 		
 		
