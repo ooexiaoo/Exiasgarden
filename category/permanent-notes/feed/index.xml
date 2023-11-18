@@ -12,7 +12,7 @@
 	<atom:link href="/category/permanent-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 14 Nov 2023 18:35:46 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 18 Nov 2023 03:44:35 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,20 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Recovering My SD Card</title>
+		<link>/recovering-my-sd-card/</link>
+		
+		<dc:creator><![CDATA[exia]]></dc:creator>
+		<pubDate>Sat, 18 Nov 2023 03:44:35 +0000</pubDate>
+				<category><![CDATA[Permanent Notes]]></category>
+		<guid isPermaLink="false">/?p=1030</guid>
+
+					<description><![CDATA[Recovering SD cards is a lot simpler than I thought it to be]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Why I switched to Linux</title>
 		<link>/why-i-switched-to-linux/</link>
 		

@@ -30,7 +30,6 @@
 	<item>
 		<title>Random Password Generator</title>
 		<link>/random-password-generator/</link>
-					<comments>/random-password-generator/#comments</comments>
 		
 		<dc:creator><![CDATA[exia]]></dc:creator>
 		<pubDate>Sun, 18 Jun 2023 14:44:52 +0000</pubDate>
@@ -40,8 +39,6 @@
 
 					<description><![CDATA[Creating a simple password generator that can create hard to break random passwords]]></description>
 		
-					<wfw:commentRss>/random-password-generator/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
 		
 		
 			</item>

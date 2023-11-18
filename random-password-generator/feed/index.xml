@@ -17,19 +17,5 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.3.2</generator>
-	<item>
-		<title>
-		By: exia		</title>
-		<link>/random-password-generator/#comment-5</link>
-
-		<dc:creator><![CDATA[exia]]></dc:creator>
-		<pubDate>Sun, 05 Nov 2023 12:22:02 +0000</pubDate>
-		<guid isPermaLink="false">/?p=872#comment-5</guid>
-
-					<description><![CDATA[does this work?]]></description>
-			<content:encoded><![CDATA[<p>does this work?</p>
-]]></content:encoded>
-		
-			</item>
-	</channel>
+</channel>
 </rss>
