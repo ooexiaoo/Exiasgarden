@@ -12,7 +12,7 @@
 	<atom:link href="/category/reference-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Thu, 23 Nov 2023 08:44:31 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 24 Nov 2023 10:05:05 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,21 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>DIY Red Light Therapy</title>
+		<link>/diy-red-light-therapy/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Fri, 24 Nov 2023 10:01:34 +0000</pubDate>
+				<category><![CDATA[Reference Notes]]></category>
+		<category><![CDATA[Red Light Therapy]]></category>
+		<guid isPermaLink="false">/?p=1072</guid>
+
+					<description><![CDATA[Notes on making your own red light therapy light]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Pantheon S1 &#038; S2</title>
 		<link>/pantheon-s1-s2/</link>
 		
