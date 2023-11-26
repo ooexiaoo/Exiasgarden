@@ -12,7 +12,7 @@
 	<atom:link href="/category/reference-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Fri, 24 Nov 2023 10:05:05 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 26 Nov 2023 10:11:45 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,21 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Electricity Usage &#038; Cost for Mini Solar</title>
+		<link>/electricity-usage-cost-for-mini-solar/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Sun, 26 Nov 2023 10:10:38 +0000</pubDate>
+				<category><![CDATA[Reference Notes]]></category>
+		<category><![CDATA[DIY]]></category>
+		<guid isPermaLink="false">/?p=1082</guid>
+
+					<description><![CDATA[Notes on electricity costs and some simple ways to reduce it to some extent]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>DIY Red Light Therapy</title>
 		<link>/diy-red-light-therapy/</link>
 		
@@ -168,24 +183,6 @@
 
 					<description><![CDATA[Lovable characters, good backstories, but nothing to write home about. The stories are mostly copy and paste job from other anime mixed in together, but that doesn&#8217;t mean that it&#8217;s not a good show. I would say that the storytelling feels like it&#8217;s made for very young kids, like 12-13, but they added adult themes [&#8230;]]]></description>
 		
-		
-		
-			</item>
-		<item>
-		<title>Random Quotes</title>
-		<link>/random-quotes/</link>
-					<comments>/random-quotes/#comments</comments>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sun, 10 Oct 2021 08:38:34 +0000</pubDate>
-				<category><![CDATA[Reference Notes]]></category>
-		<category><![CDATA[Thoughts]]></category>
-		<guid isPermaLink="false">/?p=581</guid>
-
-					<description><![CDATA[]]></description>
-		
-					<wfw:commentRss>/random-quotes/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
 		
 		
 			</item>
