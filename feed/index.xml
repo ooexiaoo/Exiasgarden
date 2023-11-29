@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 28 Nov 2023 07:03:12 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 29 Nov 2023 13:07:14 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,21 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>📈 THE ONLY YOUTUBE GUIDE YOU’LL EVER NEED 📈</title>
+		<link>/%f0%9f%93%88-the-only-youtube-guide-youll-ever-need-%f0%9f%93%88/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Wed, 29 Nov 2023 13:07:14 +0000</pubDate>
+				<category><![CDATA[Reference Notes]]></category>
+		<category><![CDATA[YouTube]]></category>
+		<guid isPermaLink="false">/?p=1091</guid>
+
+					<description><![CDATA[A small guide I got from a Channel, Will change it to suit my needs]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Electricity Usage &#038; Cost for Mini Solar</title>
 		<link>/electricity-usage-cost-for-mini-solar/</link>
 		
@@ -159,21 +174,6 @@
 		<guid isPermaLink="false">/?p=857</guid>
 
 					<description><![CDATA[These are some of the notes that I took when I was learning HTML/CSS]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>😵 Panic Button</title>
-		<link>/%f0%9f%98%b5-panic-button/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sun, 11 Jun 2023 09:20:12 +0000</pubDate>
-				<category><![CDATA[Project Notes]]></category>
-		<category><![CDATA[Browser Extension]]></category>
-		<guid isPermaLink="false">/?p=821</guid>
-
-					<description><![CDATA[Here's the first extension I made. in a few hours]]></description>
 		
 		
 		
