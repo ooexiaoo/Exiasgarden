@@ -12,7 +12,7 @@
 	<atom:link href="/tag/anime/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Mon, 04 Dec 2023 16:07:42 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 04 Dec 2023 17:47:44 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -40,8 +40,7 @@
 					<description><![CDATA[An amazing way to consume all the latest media for free]]></description>
 		
 		
-		<enclosure url="/wp-content/uploads/2023/12/InShot_20231204_181007713.mp4" length="102316927" type="video/mp4" />
-
+		
 			</item>
 		<item>
 		<title>Pantheon S1 &#038; S2</title>
