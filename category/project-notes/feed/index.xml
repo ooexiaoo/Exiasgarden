@@ -12,7 +12,7 @@
 	<atom:link href="/category/project-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 05 Dec 2023 16:03:31 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Dec 2023 13:57:53 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,21 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Basics Chapter 6</title>
+		<link>/basics-chapter-6/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Wed, 06 Dec 2023 13:52:30 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1167</guid>
+
+					<description><![CDATA[Chapter 7 of Python on Variables &#038; Data Types]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Basics Chapter 1</title>
 		<link>/basics-chapter-1/</link>
 		
@@ -38,6 +53,21 @@
 		<guid isPermaLink="false">/?p=1159</guid>
 
 					<description><![CDATA[1st few chapters from Python basics, there was not much to note]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Primitives &#038; Objects</title>
+		<link>/primitives-objects/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Mon, 04 Sep 2023 09:05:00 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<guid isPermaLink="false">/?p=1169</guid>
+
+					<description><![CDATA[Lessons from JavaScript]]></description>
 		
 		
 		

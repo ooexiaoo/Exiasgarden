@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>JavaScript &#8211; Name Unavailable</title>
+	<atom:link href="/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>A Place Where I Share A Bit Too Much About Myself</description>
+	<lastBuildDate>Wed, 06 Dec 2023 13:56:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/11/cropped-Name-Unknown-LOGO-150x150.webp</url>
+	<title>JavaScript &#8211; Name Unavailable</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Primitives &#038; Objects</title>
+		<link>/primitives-objects/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Mon, 04 Sep 2023 09:05:00 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<guid isPermaLink="false">/?p=1169</guid>
+
+					<description><![CDATA[Lessons from JavaScript]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
