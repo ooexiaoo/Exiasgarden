@@ -12,7 +12,7 @@
 	<atom:link href="/category/project-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Fri, 17 Nov 2023 15:56:40 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 05 Dec 2023 16:03:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,21 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Basics Chapter 1</title>
+		<link>/basics-chapter-1/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 11:22:00 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1159</guid>
+
+					<description><![CDATA[1st few chapters from Python basics, there was not much to note]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Random Password Generator</title>
 		<link>/random-password-generator/</link>
 		

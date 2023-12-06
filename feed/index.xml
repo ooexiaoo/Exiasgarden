@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Tue, 05 Dec 2023 11:10:04 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 05 Dec 2023 16:03:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,21 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Basics Chapter 1</title>
+		<link>/basics-chapter-1/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 11:22:00 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1159</guid>
+
+					<description><![CDATA[1st few chapters from Python basics, there was not much to note]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>How I watch Anime With This App</title>
 		<link>/how-i-watch-anime-with-this-app/</link>
 		
@@ -159,21 +174,6 @@
 		<guid isPermaLink="false">/?p=872</guid>
 
 					<description><![CDATA[Creating a simple password generator that can create hard to break random passwords]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>📚 Chapter 3 &#8211; Hovers, Transitions, Shadows</title>
-		<link>/%f0%9f%93%9a-chapter-3-hovers-transitions-shadows/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Thu, 15 Jun 2023 16:37:13 +0000</pubDate>
-				<category><![CDATA[Project Notes]]></category>
-		<category><![CDATA[HTML/CSS]]></category>
-		<guid isPermaLink="false">/?p=867</guid>
-
-					<description><![CDATA[In this chapter we jump into Pseudo class, hovers, and more.]]></description>
 		
 		
 		
