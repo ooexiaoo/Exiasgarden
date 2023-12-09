@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Wed, 06 Dec 2023 13:57:53 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 09 Dec 2023 15:16:19 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,51 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Basics Chapter 9</title>
+		<link>/basics-chapter-9/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Sat, 09 Dec 2023 15:16:18 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1189</guid>
+
+					<description><![CDATA[Typecasting in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Basics Chapter 7 &#8211; Operators</title>
+		<link>/basics-chapter-7-operators/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Sat, 09 Dec 2023 15:13:29 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1187</guid>
+
+					<description><![CDATA[Basics on Operators in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Basics Chapter 9 &#8211; Typecasting in Python</title>
+		<link>/basics-chapter-9-typecasting-in-python/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Fri, 08 Dec 2023 20:01:32 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1185</guid>
+
+					<description><![CDATA[Basics on Typecasting in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Basics Chapter 6</title>
 		<link>/basics-chapter-6/</link>
 		
@@ -128,52 +173,6 @@
 		<guid isPermaLink="false">/?p=1040</guid>
 
 					<description><![CDATA[One of the most amazing series I've watched in a long time]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Recovering My SD Card</title>
-		<link>/recovering-my-sd-card/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sat, 18 Nov 2023 03:44:35 +0000</pubDate>
-				<category><![CDATA[Permanent Notes]]></category>
-		<guid isPermaLink="false">/?p=1030</guid>
-
-					<description><![CDATA[Recovering SD cards is a lot simpler than I thought it to be]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>How Google&#8217;s SEO is Hurting the Internet</title>
-		<link>/how-googles-seo-is-hurting-the-internet/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sun, 12 Nov 2023 14:34:33 +0000</pubDate>
-				<category><![CDATA[Reference Notes]]></category>
-		<category><![CDATA[Google]]></category>
-		<category><![CDATA[SEO]]></category>
-		<guid isPermaLink="false">/?p=971</guid>
-
-					<description><![CDATA[The shady practices of google that are ruining the internet on an unpresedented scale]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Obsidian &#8211; Daily Template</title>
-		<link>/obsidian-daily-template/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Wed, 04 Oct 2023 05:44:53 +0000</pubDate>
-				<category><![CDATA[Reference Notes]]></category>
-		<category><![CDATA[Obsidian]]></category>
-		<category><![CDATA[Template]]></category>
-		<guid isPermaLink="false">/?p=914</guid>
-
-					<description><![CDATA[This is my simple obsidian daily notes template]]></description>
 		
 		
 		

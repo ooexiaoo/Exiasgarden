@@ -12,7 +12,7 @@
 	<atom:link href="/category/project-notes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Wed, 06 Dec 2023 13:57:53 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 09 Dec 2023 15:16:19 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,51 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Basics Chapter 9</title>
+		<link>/basics-chapter-9/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Sat, 09 Dec 2023 15:16:18 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1189</guid>
+
+					<description><![CDATA[Typecasting in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Basics Chapter 7 &#8211; Operators</title>
+		<link>/basics-chapter-7-operators/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Sat, 09 Dec 2023 15:13:29 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1187</guid>
+
+					<description><![CDATA[Basics on Operators in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Basics Chapter 9 &#8211; Typecasting in Python</title>
+		<link>/basics-chapter-9-typecasting-in-python/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Fri, 08 Dec 2023 20:01:32 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1185</guid>
+
+					<description><![CDATA[Basics on Typecasting in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Basics Chapter 6</title>
 		<link>/basics-chapter-6/</link>
 		
@@ -128,21 +173,6 @@
 		<guid isPermaLink="false">/?p=821</guid>
 
 					<description><![CDATA[Here's the first extension I made. in a few hours]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>DIY Browser Homepage</title>
-		<link>/diy-browser-homepage/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Wed, 07 Jun 2023 14:25:56 +0000</pubDate>
-				<category><![CDATA[Project Notes]]></category>
-		<category><![CDATA[Homepage]]></category>
-		<guid isPermaLink="false">/?p=782</guid>
-
-					<description><![CDATA[A simple browser homepage that I wanted to make for a long time 👍🏻]]></description>
 		
 		
 		
