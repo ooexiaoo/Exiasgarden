@@ -12,7 +12,7 @@
 	<atom:link href="/tag/python/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sat, 09 Dec 2023 15:16:19 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 10 Dec 2023 15:07:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,31 +28,31 @@
 	<height>32</height>
 </image> 
 	<item>
-		<title>Basics Chapter 9</title>
-		<link>/basics-chapter-9/</link>
+		<title>Basics Python 11 &#8211; Strings</title>
+		<link>/basics-python-11-strings/</link>
 		
 		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sat, 09 Dec 2023 15:16:18 +0000</pubDate>
+		<pubDate>Sun, 10 Dec 2023 15:07:42 +0000</pubDate>
 				<category><![CDATA[Project Notes]]></category>
 		<category><![CDATA[Python]]></category>
-		<guid isPermaLink="false">/?p=1189</guid>
+		<guid isPermaLink="false">/?p=1193</guid>
 
-					<description><![CDATA[Typecasting in Python]]></description>
+					<description><![CDATA[A bit about strings and how to use them]]></description>
 		
 		
 		
 			</item>
 		<item>
-		<title>Basics Chapter 7 &#8211; Operators</title>
-		<link>/basics-chapter-7-operators/</link>
+		<title>Basics Chapter 10 &#8211; Taking User Input</title>
+		<link>/basics-chapter-10-taking-user-input/</link>
 		
 		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sat, 09 Dec 2023 15:13:29 +0000</pubDate>
+		<pubDate>Sun, 10 Dec 2023 15:05:23 +0000</pubDate>
 				<category><![CDATA[Project Notes]]></category>
 		<category><![CDATA[Python]]></category>
-		<guid isPermaLink="false">/?p=1187</guid>
+		<guid isPermaLink="false">/?p=1191</guid>
 
-					<description><![CDATA[Basics on Operators in Python]]></description>
+					<description><![CDATA[Basics on how to take user inputs in Python]]></description>
 		
 		
 		
@@ -68,6 +68,21 @@
 		<guid isPermaLink="false">/?p=1185</guid>
 
 					<description><![CDATA[Basics on Typecasting in Python]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Basics Chapter 7 &#8211; Operators</title>
+		<link>/basics-chapter-7-operators/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Fri, 08 Dec 2023 15:13:29 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1187</guid>
+
+					<description><![CDATA[Basics on Operators in Python]]></description>
 		
 		
 		
