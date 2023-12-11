@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sun, 10 Dec 2023 15:07:42 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 10 Dec 2023 20:01:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -148,6 +148,21 @@
 		
 			</item>
 		<item>
+		<title>Orders Of Thinking</title>
+		<link>/orders-of-thinking/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Mon, 27 Nov 2023 19:39:00 +0000</pubDate>
+				<category><![CDATA[Fleeting Notes]]></category>
+		<category><![CDATA[Orders of Thinking]]></category>
+		<guid isPermaLink="false">/?p=1195</guid>
+
+					<description><![CDATA[Fleeting notes on the orders of thinking and how to go to a higher order of thinking, and avoid using the MONKEY brain]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Electricity Usage &#038; Cost for Mini Solar</title>
 		<link>/electricity-usage-cost-for-mini-solar/</link>
 		
@@ -158,21 +173,6 @@
 		<guid isPermaLink="false">/?p=1082</guid>
 
 					<description><![CDATA[Notes on electricity costs and some simple ways to reduce it to some extent]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>DIY Red Light Therapy</title>
-		<link>/diy-red-light-therapy/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Fri, 24 Nov 2023 10:01:34 +0000</pubDate>
-				<category><![CDATA[Reference Notes]]></category>
-		<category><![CDATA[Red Light Therapy]]></category>
-		<guid isPermaLink="false">/?p=1072</guid>
-
-					<description><![CDATA[Notes on making your own red light therapy light]]></description>
 		
 		
 		
