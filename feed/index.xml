@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>A Place Where I Share A Bit Too Much About Myself</description>
-	<lastBuildDate>Sun, 10 Dec 2023 20:01:23 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 13 Dec 2023 17:24:08 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,36 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Basics Chapter 13 &#8211; String Method</title>
+		<link>/basics-chapter-13-string-method/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Wed, 13 Dec 2023 17:24:07 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1201</guid>
+
+					<description><![CDATA[String methods like upper(), lower(), etc]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Basics Chapter 12 &#8211; String Slicing &#038; Operations on String</title>
+		<link>/basics-chapter-12-string-slicing-operations-on-string/</link>
+		
+		<dc:creator><![CDATA[EXIA]]></dc:creator>
+		<pubDate>Mon, 11 Dec 2023 18:35:00 +0000</pubDate>
+				<category><![CDATA[Project Notes]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">/?p=1199</guid>
+
+					<description><![CDATA[Basics of string slicing &#038; operations on string]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Basics Python 11 &#8211; Strings</title>
 		<link>/basics-python-11-strings/</link>
 		
@@ -143,36 +173,6 @@
 		<guid isPermaLink="false">/?p=1091</guid>
 
 					<description><![CDATA[A small guide I got from a Channel, Will change it to suit my needs]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Orders Of Thinking</title>
-		<link>/orders-of-thinking/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Mon, 27 Nov 2023 19:39:00 +0000</pubDate>
-				<category><![CDATA[Fleeting Notes]]></category>
-		<category><![CDATA[Orders of Thinking]]></category>
-		<guid isPermaLink="false">/?p=1195</guid>
-
-					<description><![CDATA[Fleeting notes on the orders of thinking and how to go to a higher order of thinking, and avoid using the MONKEY brain]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Electricity Usage &#038; Cost for Mini Solar</title>
-		<link>/electricity-usage-cost-for-mini-solar/</link>
-		
-		<dc:creator><![CDATA[EXIA]]></dc:creator>
-		<pubDate>Sun, 26 Nov 2023 10:10:38 +0000</pubDate>
-				<category><![CDATA[Reference Notes]]></category>
-		<category><![CDATA[DIY]]></category>
-		<guid isPermaLink="false">/?p=1082</guid>
-
-					<description><![CDATA[Notes on electricity costs and some simple ways to reduce it to some extent]]></description>
 		
 		
 		
